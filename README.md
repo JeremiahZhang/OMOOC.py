@@ -9,6 +9,6 @@
 
 
 
-具体参考
+更多参考
 - [入学三问](https://github.com/JeremiahZhang/gopython/blob/master/PY-%E6%98%9F%E9%99%85%E8%BF%B7%E8%88%AA-%E5%A4%87%E6%88%98%E7%AF%87/2015-9-10-T2-%E5%85%A5%E5%AD%A6%E4%B8%89%E9%97%AE.md)
 - [个人博客](http://jeremiahzhang.github.io/)
