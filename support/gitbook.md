@@ -1,5 +1,17 @@
-# gitbook
-~ 是什么以及为什么
+# Gitbook
+
+*增补
+
+是什么
+
+> GitBook是一个基于 [Node.js](https://nodejs.org/en/) 的命令行工具，可使用 Github/Git 和 [Markdown](http://baike.baidu.com/view/2311114.htm) 来制作精美的电子书，GitBook 并非关于 Git 的教程。
+
+为什么
+
+- 制作教程 教会半年前的自己 教是最好的学
+- 获得反馈
+- 可输出多种格式文件PDF epub mobi
+
 
 ## 现象
 
