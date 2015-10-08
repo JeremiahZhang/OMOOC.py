@@ -34,7 +34,7 @@
 
 ### 双推 double push *增补
 
-所谓双推 就是将本地working directory的内容 即push到 Github 仓库 又推送到 Gitbook
+所谓双推 就是将本地working directory(or我称其为Local Repo)的内容 即push到 Github 仓库 又推送到 Gitbook
 
 #### 实现 ####
 
