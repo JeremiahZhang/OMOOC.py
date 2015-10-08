@@ -1,6 +1,6 @@
 - [Tools](toolssupport/README.md)
 	- [Windows Setting](toolssupport/win7.md)
-	- [Learn Git](toolssupport/leargit.md)
+	- [Learn Git](toolssupport/learngit.md)
 	- [Gitbook](toolssupport/gitbook.md)
 	- [ST2与Py环境配置](toolssupport/SubPy.md)
 - [草案素材 ~ _draft](_draft/README.md)
