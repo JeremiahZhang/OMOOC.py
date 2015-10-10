@@ -11,6 +11,7 @@
 - 7-撤销commit到远程库（git revert）
 - 8-git pull将远程库拉到本地
 - 9-删除远程库 git remote rm 
+- 10-git clone < git url > 思想clone之意 就已明了
 
 ## 1-Push a new local repo to Github ##
 
