@@ -6,12 +6,11 @@
 - ST2
 	- sublimeREPL F5运行
 	- fibo.fib2(100) 没有结果
+- python 2.7.8
 
 ### 分析 ###
 
 - 环境问题 ST2 与Python 用 shell 来解决一下
-
-
 
 ----------
 
