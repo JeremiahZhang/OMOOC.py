@@ -9,3 +9,4 @@
 - Git 基础
 - GitbookGuide 简要
 - Sublime Text2 文本编辑器与Py环境配置
+- Python 2.7.8
