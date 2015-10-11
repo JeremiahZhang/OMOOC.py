@@ -16,7 +16,7 @@ def write_number(image_file_path, number = 1):
 	ImageDraw.Draw(img).text((position, 0), number_txt, (255, 0, 0), font)
 	return img
 
-# need an image 'pic_name.png'
-write_number('pic_name.png').save('result.png')
+# need an image 'nar.png'
+write_number('nar.png').save('result.png')
 # if number > 100, shows '99+'
-write_number('pic_name.png', 100).save('result100.png')
+write_number('nar.png', 100).save('result100.png')
