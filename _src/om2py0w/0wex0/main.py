@@ -56,6 +56,8 @@ line string, but can also be a multi-line comment.'''	# 多行注释 用'''comme
 if __name__ == '__main__':		# 这个原来不知道是什么 将其注释掉 发现
 	main()						# 没有任何结果产生 说明 是调用主函数 main()
 								# 为什么会这样 本来就这样吧  
+								# 执行程序 cause a script to run main()
+								# 单独使用 无法使用 OK 就是放在脚本结尾的
 
 # 我自己人工能得出结果
 # 编写注意 def if for 这种需要最后 : 不要遗漏
