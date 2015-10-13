@@ -50,6 +50,9 @@ def foo(param1, secondParam):
 		print 'moo' # know
 
 	return res	# thsi is a one line comment. 不明白return 我去掉这行 也可以运行
+				# The return statement returns with a value from a function.
+				# return without an expression argument returns None. 
+				# Falling off the end of a function also returns None
 	'''A multi-
 line string, but can also be a multi-line comment.'''	# 多行注释 用'''comment'''
 
