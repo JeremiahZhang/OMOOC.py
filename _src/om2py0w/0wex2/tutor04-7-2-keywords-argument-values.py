@@ -28,6 +28,7 @@ def cheeseshop(kind, *arguments, **keywords):
 	for arg in arguments:
 		print arg
 	print '-' * 40
+	print keywords
 	keys = sorted(keywords.keys()) # 将keywords中的字母按首字母排序的 a b c d等顺序
 	for kw in keys:
 		print kw, ":", keywords[kw]
