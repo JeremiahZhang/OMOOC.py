@@ -28,9 +28,11 @@ def cheeseshop(kind, *arguments, **keywords):
 	for arg in arguments:
 		print arg
 	print '-' * 40
-	keys = sorted(keywords.keys())
+	keys = sorted(keywords.keys()) # 将keywords中的字母按首字母排序的 a b c d等顺序
 	for kw in keys:
 		print kw, ":", keywords[kw]
 cheeseshop("limburger", 
 	"it's very runny, sir.", "It's really very, Very runny, sir.", 
 	shopkeeper = 'Michael Palin', client = 'John Cleese', sketch = 'cheese shop sketch')
+
+# 现在我已经理解了 这里的coding
