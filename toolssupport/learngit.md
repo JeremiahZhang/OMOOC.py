@@ -25,7 +25,7 @@
 - 远程仓库设置
 	- creat a new repo
 	- copy the SSH of the new repo
-	- git add -a
+	- git add --a
 	- git commit -m "add new repo"
 	- git remote add learnml <-my SSH clone URL add->
 	- git push -u learnml master
