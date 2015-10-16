@@ -4,14 +4,13 @@
 
 - 根据 [极简Python上手导念](http://wiki.zoomquiet.io/pythonic/MinimalistPyStart) 中的一页解说了 Python 代码
 	- ![42 coder](http://wiki.woodpecker.org.cn/moin/ZqQuickIntoPy?action=AttachFile&do=get&target=coffeeghost-q-in-py.png)
-- 会解说了 但是如何去运用 将其功能化呢？[https://github.com/JeremiahZhang/pybeginner/tree/master/_src/om2py0w/0wex0](https://github.com/JeremiahZhang/pybeginner/tree/master/_src/om2py0w/0wex0)
+- 会解说了 但是如何去运用 将其功能化呢？[代码解说](https://github.com/JeremiahZhang/pybeginner/blob/master/_src/om2py0w/0wex0/main.py)
 - 这42行代码：
 	+ 包含80%左右的 py 代码常见情景
 		+ 常见情景是什么？
 			+ main 函数 调用 循环 print 等等
 	+ 是不是类似 欧式几何 中 那些 定义 公设 公理 
 		+ 用**常见情景**（定义 公设 公理） 去 实现（证明）其他功能（命题）呢？
-
 
 ----------
 
