@@ -5,6 +5,7 @@
 	- [Gitbook](toolssupport/gitbook.md)
 	- [ST2与Py环境配置](toolssupport/SubPy.md)
 - [人如何学习的](02-learn/README.md)
+	- [Renewminding](02-learn/0wd4-OpenCourse-Note.md)
 - [代码 (_src)](_src/README.md)
 - [草案素材 ~ _draft](_draft/README.md)
 - [反转构思](reverse.md)
