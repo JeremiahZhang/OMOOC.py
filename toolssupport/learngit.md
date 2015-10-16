@@ -1,7 +1,6 @@
 # Learn Git #
 
 - 1-version control
-	- practice 
 - 2-历史版本
 	- 版本回退
 - 3-设置版本标签
