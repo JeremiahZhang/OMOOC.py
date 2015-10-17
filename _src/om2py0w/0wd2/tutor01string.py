@@ -70,8 +70,3 @@ s = 'ilovejesus'
 print len(s)
 ss = 'i love jesus '
 print len(ss)
-
-
-
-
-
