@@ -12,21 +12,17 @@ print """Congratulations: You have invoked the script main.py
 
 Have fun in Python Star Trek!""" # 
 
-def ask_ok(prompt, retries = 4, complaint = 'yes or no, please!'):
-	while True:
-		ok = raw_input(prompt)
-		if ok in ('y', 'ye','yes'):  	# in
-			return True					# return 
-		if ok in ('n', 'no', 'nop', 'nope'):
-			return False
-		retries = retries - 1 
-		if retries < 0:
-			raise IOError('Refuseink user')
-		print complaint
+done = False
+textInput = ""
 
-while True:
-    input_words = raw_input("Please input ur diary use keyboard: ")
-    print ("Here is my diary: " + input_words)
+while (done == False):
+    nextInput = raw_input("Please input ur words: ")
+    if nextInput == "end":
+        break
+    else:
+        textInput += nextInput
+
+print ("Here is ur diary: " + textInput)
 
 keywords = sys.argv[1:] # The list of command line arguments passed to a Python script
 # 命令行中 除脚本名 以外的所有参数都保存在 keywords 中
