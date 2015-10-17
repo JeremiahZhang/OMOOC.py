@@ -12,6 +12,14 @@ print """Congratulations: You have invoked the script main.py
 
 Have fun in Python Star Trek!""" # 
 
+name = raw_input("Glad to write today's diary"
+    "\n Please give the name first:") + '.txt' 
+# 以上 提示中文 是乱码 pshell 会出现乱码
+# 以上 这输入中文名 也是乱码 
+# 待解决
+
+writer = open(name, "w") # if the textfile exist it'll be erased
+
 done = False
 textInput = ""
 
@@ -21,12 +29,13 @@ while (done == False):
         break
     else:
         textInput += nextInput
-        print textInput
-        writer = open("textfile.txt", "w")
+        print nextInput
         writer.write(nextInput + "\n") #  write into textfile.txt and start a new line
+writer.close()
 
 print ("Here is ur diary: " + textInput)
 
+# ==================== 调用脚本 及其关键字 
 keywords = sys.argv[1:] # The list of command line arguments passed to a Python script
 # 命令行中 除脚本名 以外的所有参数都保存在 keywords 中
 
@@ -57,7 +66,8 @@ for words in keywords:
 # =========== 输出文件
 # - 换行
 # - 日期
-# - 中文编码
+# - 中文编码 
+#    + 中文编码问题
 # =========== 回读文本
 # - 自动将过往日志打印？
 # 	+ 如何找到日志文件
