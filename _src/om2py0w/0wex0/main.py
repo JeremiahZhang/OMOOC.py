@@ -21,6 +21,9 @@ while (done == False):
         break
     else:
         textInput += nextInput
+        print textInput
+        writer = open("textfile.txt", "w")
+        writer.write(nextInput + "\n") #  write into textfile.txt and start a new line
 
 print ("Here is ur diary: " + textInput)
 
@@ -36,6 +39,8 @@ for words in keywords:
     # print type(words)
     print words,
 
+# 交互
+# ========== 调用 python脚本
 # ========== 中文输入
 # 在 cmd line 中输入中文 如 我爱python
 # 问题： 中文 我爱 这部分 输出的是 一种编码形式 解决之 
@@ -48,3 +53,15 @@ for words in keywords:
 # 在没有修改默认编码是 以上设置 也是错的
 # 参考 http://www.kryptosx.info/archives/391.html
 # ===========持续交互
+# while 
+# =========== 输出文件
+# - 换行
+# - 日期
+# - 中文编码
+# =========== 回读文本
+# - 自动将过往日志打印？
+# 	+ 如何找到日志文件
+#	+ 如何打开
+#	+ 如何读取
+# 	+ 如何输出日志
+#   + 中文OK么
