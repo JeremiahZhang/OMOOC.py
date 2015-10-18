@@ -12,4 +12,14 @@ def ask_ok(prompt, retries = 4, complaint = 'yes or no, please!'):
 			raise IOError('Refuseink user')
 		print complaint
 
-ask_ok('你真的想退出么？', 2000)
+# ask_ok('你真的想退出么？', 2000)
+
+def ask_over(prompt):
+    while True:
+        over = raw_input(prompt)
+        print over
+        if over in ('yes', 'ye', 'y'):
+            break
+        elif over in ('n', 'no', 'nop', 'nope'):
+            
+
