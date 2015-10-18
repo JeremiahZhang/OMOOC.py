@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 print 'argument values'
-def ask_ok(prompt, retries = 4, complaint = 'yes or no, please!'):
+def ask_ok(prompt, retries=4, complaint='yes or no, please!'):
 	while True:
 		ok = raw_input(prompt)
 		if ok in ('y', 'ye','yes'):  	# in
