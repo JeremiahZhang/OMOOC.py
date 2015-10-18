@@ -10,6 +10,8 @@ os.chdir(current_dir)
 
 for file in glob.glob("*.txt"):
     print(file)
+    file_content = open(file, "r")
+    print file_content.read()
 
 print """Congratulations: You have invoked the script main.py
 
