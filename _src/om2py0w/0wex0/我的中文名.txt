@@ -1,0 +1,1 @@
+使用的是 name = raw_input("请输入日志名: ".encode(sys.stdin.encoding)) + '.txt'

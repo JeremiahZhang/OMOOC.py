@@ -1,0 +1,9 @@
+# 1 使用 name = raw_input("请输入日志名: ".encode(sys.stdin.encoding)) + '.txt' 
+- 中文日志名正常显示
+- txt内容 用记事本打开正常显示
+- 但是用 ST2打开 中文显示乱码
+- 是ST2编码的问题了 这回
+# 2 使用 name = raw_input("请输入日志名: ".encode(sys.stdout.encoding)) + '.txt'
+- 中文日志名正常显示
+- txt内容 用记事本打开正常显示
+- 但是用 ST2打开 中文显示乱码
