@@ -46,8 +46,8 @@ textInput = ""
 while (done == False):
     nextInput = raw_input("Please input ur words: ")
     if nextInput == "end": 
-        nextInput == ask_date("Do you want add date, yes or no?")
-        writer.write(nextInput)
+        inputDate = ask_date("Do you want add date, yes or no?")
+        writer.write('\n' + inputDate)
         break
     else:
         textInput += nextInput
