@@ -1,8 +1,15 @@
 # -*- coding: utf-8 -*-
-import sys
+import sys, os, glob
 # print sys.getdefaultencoding()
 reload(sys) # 必须 reload
 sys.setdefaultencoding('utf-8')
+
+current_dir = os.getcwd()
+print type(current_dir)
+os.chdir(current_dir)
+
+for file in glob.glob("*.txt"):
+    print(file)
 
 print """Congratulations: You have invoked the script main.py
 
@@ -98,6 +105,7 @@ for words in keywords:
 # 双引号中的 请输入日志名 出现乱码 璇疯緭鍏ユ棩蹇楀悕
 # =========== 回读文本
 # - 自动将过往日志打印？
+# http://stackoverflow.com/questions/3964681/find-all-files-in-directory-with-extension-txt-with-python
 # 	+ 如何找到日志文件
 #	+ 如何打开
 #	+ 如何读取
