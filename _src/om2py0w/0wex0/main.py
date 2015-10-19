@@ -4,6 +4,19 @@ import sys, os, glob
 reload(sys) # 必须 reload
 sys.setdefaultencoding('utf-8')
 
+# ===========调用脚本 外部数据 中英文
+keywords = sys.argv[1:] # The list of command line arguments passed to a Python script
+# 命令行中 除脚本名 以外的所有参数都保存在 keywords 中
+
+print keywords 
+print type(keywords) # 查看keyword 它是list 输入英文 print 英文
+
+for words in keywords:
+    # words = unicode(words, "ascii")
+    # print words
+    # print type(words)
+    print words,
+
 current_dir = os.getcwd()
 print type(current_dir)
 os.chdir(current_dir)
@@ -68,17 +81,7 @@ writer.close()
 print ("Here is ur diary: " + textInput)
 
 # ==================== 调用脚本 及其关键字 
-keywords = sys.argv[1:] # The list of command line arguments passed to a Python script
-# 命令行中 除脚本名 以外的所有参数都保存在 keywords 中
 
-print keywords 
-print type(keywords) # 查看keyword 它是list 输入英文 print 英文
-
-for words in keywords:
-    # words = unicode(words, "ascii")
-    # print words
-    # print type(words)
-    print words,
 
 # 交互
 # ========== 调用 python脚本
