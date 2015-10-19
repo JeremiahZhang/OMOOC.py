@@ -49,7 +49,7 @@ no_list = ['no', 'n', 'NO', 'N']
 def ask_date(prompt, retries=3, friendly_warn='Please input yes or no'):
     ok = raw_input(prompt)
     if ok in yes_list:
-        ur_date = raw_input("Please add date: ")
+        ur_date = raw_input("Please add date: ") # 这里可以调用模块 time
     if ok in no_list:
         ur_date = "\n"
 
