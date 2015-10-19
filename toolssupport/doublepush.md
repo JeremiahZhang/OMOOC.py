@@ -80,6 +80,30 @@
 		rf = reflog
 5.修改本地文件内容 `git ad` `git ci`后 `git pu` 就实现双推 立即化简了上面 需要两次 `git push` 了
 
+## 修改 ##
+
+考虑到 hub 已经是一个 remote 名字 就修改 添加一个新的 remote origin
+
+1-直接在.git/config中添加如下代码：
+
+	[remote "origin"]
+		pushurl = https://jeremiahzhang:apitoken@git.gitbook.com/jeremiahzhang/pybeginner.git
+		pushurl = git@github.com:JeremiahZhang/pybeginner.git
+
+2-[alias]中 修改push的绰号
+
+	pu = push hub master
+
+3-测试 git pu 成功
+
+## 反思 ##
+
+- DRP记住 不要重复我自己 所以当发现重复复杂的行为的时候 立即思考 搜索没有有精简的办法
+- 其实一切以上只要修改.git/config文件中代码就行了 不过还是进行命令行的可操行和拓展性更强 就像之前群里说的160推
+- 看看接下来能不能实现160推 。。。推 拓展 big picture
+
+10/19/2015 9:51:59 PM 添加
+
 
 	
 	
