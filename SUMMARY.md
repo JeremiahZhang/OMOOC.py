@@ -4,6 +4,7 @@
 	- [windows setting](toolssupport/win7.md)
 	- [Gitbook](toolssupport/gitbook.md)
 	- [ST2与Py环境配置](toolssupport/SubPy.md)
+	- [双推](toolssupport/doublepush.md)
 - [人如何学习的](02_learn/README.md)
 	- [Renewminding](02_learn/0wd4-OpenCourse-Note.md)
 - [基础旋进](03_basic/README.md)
