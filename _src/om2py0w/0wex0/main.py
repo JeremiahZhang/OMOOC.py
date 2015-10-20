@@ -51,7 +51,7 @@ def main():
             diary_writer.write(nextInput + "\n")
 
     diary_writer.close()
-    print ("Here is your" + inputDate +"diary: " + textInput)
+    print ("Here is your " + inputDate +" diary: " + textInput)
 
 # ******* date time function *******
 def ask_date(prompt):  # 是否添加时间
