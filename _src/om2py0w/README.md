@@ -18,4 +18,4 @@
 		+ 最后会打印你刚刚写作的所有内容（不包括时间）
 		+ shell中打开文件 `cat diary_name.txt` 会日志内容
 	+ 演示
-	
+	![演示](https://raw.githubusercontent.com/JeremiahZhang/pybeginner/master/_image/05_readme_pre.JPG)
