@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 import sys
+from time import gmtime, strftime
+
 reload(sys) # 必须 reload
 sys.setdefaultencoding('utf-8')
 
@@ -21,7 +23,7 @@ no_list = ['no', 'n', 'NO', 'N']
 def ask_date(prompt):
     ok = raw_input(prompt)
     if ok in yes_list:
-        ur_date = raw_input("Please add date: ") # 这里可以调用模块 time 参考
+        ur_date = strftime("%Y-%m-%d %H:%M:%S", gmtime()) # 这里可以调用模块 time 参考
     if ok in no_list:
         ur_date = "\n"
     return ur_date

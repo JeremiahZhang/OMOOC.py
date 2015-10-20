@@ -175,6 +175,33 @@ done
 	writer.close()
 	print ("Here is ur diary: " + textInput) # 你的日志内容
 
+## 问题 ##
+
+时间是手动输入的 是否可以询问之后 自动输入呢？
+
+search stackoverflow [http://stackoverflow.com/questions/415511/how-to-get-current-time-in-python](http://stackoverflow.com/questions/415511/how-to-get-current-time-in-python "datetime")
+
+使用 time 模块
+
+	from time import gmtime, strftime
+	strftime("%Y-%m-%d %H:%M:%S", gmtime())
+help文档中 `time.gmtime` 使用UTC(世界标准时间)的时间 
+进而改为`localtime()`
+
+### 执行 ###
+
+添加模块 `from time import localtime, strftime`
+
+修改 `ask_date()` 中的代码
+	
+	if ok in yes_list:
+        ur_date = strftime("%Y-%m-%d %H:%M:%S", localtime()) 
+
+运行之后发现
+
+
+
+
 
 
 
