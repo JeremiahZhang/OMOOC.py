@@ -22,3 +22,9 @@
 ## (￣▽￣)
 
 10/9/2015 `*`增补
+
+10/20/2015 申明
+
+停止更新 迁移至 此库[JeremiahZhang/OMOOC2py](https://github.com/JeremiahZhang/OMOOC2py)
+
+Gitbook [Jeremiah Python Star Trek]( https://www.gitbook.com/book/jeremiahzhang/omooc2py/details )
