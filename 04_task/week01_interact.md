@@ -132,7 +132,7 @@ done
 
 ----------
 
-## 持续交互 + 输出为文件 ##
+## 4-5 持续交互 + 输出为文件 ##
 
 - 运行等待输入
 	- while 循环
@@ -175,7 +175,7 @@ done
 	writer.close()
 	print ("Here is ur diary: " + textInput) # 你的日志内容
 
-## 问题 ##
+### 问题 ###
 
 时间是手动输入的 是否可以询问之后 自动输入呢？
 
@@ -203,7 +203,7 @@ help文档中 `time.gmtime` 使用UTC(世界标准时间)的时间
 
 ----------
 
-## 回读文本数据 ##
+## 6 回读文本数据 ##
 
 - 可以将过往的日志比如txt文件打印出来
 - 让脚本可以对电脑中（操作系统）的文件进行-寻找-打开
@@ -228,11 +228,14 @@ help文档中 `time.gmtime` 使用UTC(世界标准时间)的时间
     	print(file)
     	file_content = open(file, "r")
     	print file_content.read()
-pshell 执行，可以成功读取代码所在文件夹中所有的txt文件 并打印
+pshell 执行，可以成功读取代码所在文件夹中所有的txt文件 并打印 果效：
+![open_read_print](https://raw.githubusercontent.com/JeremiahZhang/pybeginner/master/_image/02_open_read_print.JPG)
 
+----------
 
-	
+## 整合 ##
 
+以上6个子任务 整合成一个完整的脚本 [main.py]()
 
 ----------
 
@@ -243,3 +246,4 @@ pshell 执行，可以成功读取代码所在文件夹中所有的txt文件 并
 	+ 学会分析问题 拆解问题 解决问题
 	+ Keep calm Keep Thinking Smartly
 - 发现自己写的比较冗余？如何改进写教程呢？
+- 
