@@ -197,19 +197,38 @@ help文档中 `time.gmtime` 使用UTC(世界标准时间)的时间
 	if ok in yes_list:
         ur_date = strftime("%Y-%m-%d %H:%M:%S", localtime()) 
 
-运行之后发现
+果效
 
+![datetim vic](https://raw.githubusercontent.com/JeremiahZhang/pybeginner/master/_image/01_time_test.JPG)
 
-
-
-
-
-
-
-
+----------
 
 ## 回读文本数据 ##
 
+- 可以将过往的日志比如txt文件打印出来
+- 让脚本可以对电脑中（操作系统）的文件进行-寻找-打开
+	- 使用`os`： `Miscellaneous operating system interfaces`
+	- 打开当前目录 `current_dir = os.getcwd()` `os.chdir(current_dir)`
+	- 找到txt文件：`glob`模块 `glob.glob(*.txt)` 
+- 7.2. Reading and Writing Files
+	- 打开 `open(filename,mode)` mode常用如下：
+		- "r" : 可读
+		- "w" : 可写
+		- "a" : append 附加在文件后面 
+	- 读取 `read()`
+
+代码：
+
+	import os, glob
+	current_dir = os.getcwd()
+	print type(current_dir)
+	os.chdir(current_dir)
+
+	for file in glob.glob("*.txt"):
+    	print(file)
+    	file_content = open(file, "r")
+    	print file_content.read()
+pshell 执行，可以成功读取代码所在文件夹中所有的txt文件 并打印
 
 
 	
