@@ -132,18 +132,54 @@ done
 
 ----------
 
-## 持续交互 ##
+## 持续交互 + 输出为文件 ##
 
 - 运行等待输入
 	- while 循环
 - 退出脚本
-	- 询问是否退出
+	- 是否退出 日志写完以 `end` 结尾代表退出
+	- 退出时 是否添加时间 `def ask_date()`
+- 输出为文件
+	- txt
+	- 打开文件`open()` 写入`write()`
 
 代码
 
+	yes_list = ['yes', 'yep', 'ye', 'y', 'YES','YEP', 'YE', 'Y']
+	no_list = ['no', 'n', 'NO', 'N']
+
+	def ask_date(prompt): # 退出时是否添加时间
+    	ok = raw_input(prompt)
+    	if ok in yes_list:
+        	ur_date = raw_input("Please add date: ") 
+    	if ok in no_list:
+        	ur_date = "\n"
+    	return ur_date
+
+	done = False
+	textInput = ""
+
+	writer = open(diary_name, "w") # if the textfile exist it'll be erased
+
+	while (done == False): # 持续输入日志
+    	nextInput = raw_input("Please input ur words: ")
+    	if nextInput == "end": 
+        	inputDate = ask_date("Do you want add date, yes or no?") # 询问退出的时候添加日期
+        	writer.write('\n' + inputDate)
+        	break
+    	else:
+        	textInput += nextInput
+        	print nextInput
+        	writer.write(nextInput + "\n") #  write into textfile.txt and start a new line
+
+	writer.close()
+	print ("Here is ur diary: " + textInput) # 你的日志内容
 
 
-## 输出为文件 ##
+
+
+
+
 
 ## 回读文本数据 ##
 

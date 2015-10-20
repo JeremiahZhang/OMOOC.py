@@ -18,18 +18,12 @@ diary_name = raw_input("请输入日志名: ".encode(sys.stdout.encoding)) + '.t
 yes_list = ['yes', 'yep', 'ye', 'y', 'YES','YEP', 'YE', 'Y']
 no_list = ['no', 'n', 'NO', 'N']
 
-def ask_date(prompt, retries=3, friendly_warn='Please input yes or no'):
+def ask_date(prompt):
     ok = raw_input(prompt)
     if ok in yes_list:
         ur_date = raw_input("Please add date: ") # 这里可以调用模块 time 参考
     if ok in no_list:
         ur_date = "\n"
-
-    retries += -1
-    if retries < 0:
-        raise IOError('Refuselink user')
-    print friendly_warn
-
     return ur_date
 
 writer = open(diary_name, "w") # if the textfile exist it'll be erased
