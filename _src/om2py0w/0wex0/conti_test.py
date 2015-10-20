@@ -34,15 +34,15 @@ done = False
 textInput = ""
 
 while (done == False):
-    nextInput = raw_input("Please input ur words: ")
-    if nextInput == "end": 
+    nextInput = raw_input("Please input ur words: ") + "\n"
+    if nextInput == "end" + "\n":  # must add "\n"
         inputDate = ask_date("Do you want add date, yes or no?")
         writer.write('\n' + inputDate)
         break
     else:
         textInput += nextInput
         print nextInput
-        writer.write(nextInput + "\n") #  write into textfile.txt and start a new line
+        writer.write(nextInput) #  write into textfile.txt and start a new line
 
 writer.close()
 
