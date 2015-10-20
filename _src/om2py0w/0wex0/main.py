@@ -14,23 +14,24 @@ def main():
         print words,
     print "\n"
 
-    script_statement = """ # 脚本说明：
-
-        1.这是每日日志书写脚本
-        2.请按照提示进行 日志书写
-        3.想要结束？最后一行请单独输入：end
-        
-        祝您书写愉快！
-        """
-    print(script_statement.encode(sys.stdout.encoding))
-
-    current_dir = os.getcwd()
+    current_dir = os.getcwd() # 打印之前日志
     os.chdir(current_dir)
 
     for file in glob.glob("*.txt"):
         print(file)
         file_content = open(file, "r")
         print file_content.read()
+
+    script_statement = """ # 脚本说明：
+
+        1.这是每日日志书写脚本
+        2.以上打印的是脚本所在文件夹所有日志(txt格式)名称及内容
+        3.请按照提示进行 日志书写
+        4.想要结束日志写作？最后一行请单独输入：end
+        
+        祝您书写愉快！
+        """
+    print(script_statement.encode(sys.stdout.encoding))
 
     # ******* 写日志 *******
     done = False

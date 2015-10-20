@@ -1,4 +1,4 @@
-# week_1
+# week_1 日志交互系统
 
 ## 背景 ##
 
@@ -235,15 +235,61 @@ pshell 执行，可以成功读取代码所在文件夹中所有的txt文件 并
 
 ## 整合 ##
 
-以上6个子任务 整合成一个完整的脚本 [main.py]()
+以上6个子任务 整合成一个完整的脚本 [main.py](https://github.com/JeremiahZhang/pybeginner/blob/master/_src/om2py0w/0wex0/main.py)  
+
+win pshell 中调用 `python main.py 我 爱 Python`
+
+果效：
+![diarylog](https://raw.githubusercontent.com/JeremiahZhang/pybeginner/master/_image/03_all_done.JPG)
 
 ----------
 
+## 使用 ##
+
+- 模块 
+	- sys
+	- os
+	- glob
+	- time
+- build function
+	- open()
+	- file.read()
+	- 模块中的func
+		- sys.setdefaultencoding('utf-8')
+		- sys.argv[]
+		- string.encode(sys.stdout.encoding)
+		- os.getcwd()
+		- glob.glob()
+		- strftime()
+
 ## 反思 ##
 
-- 任务发布的时候 简单看了一下任务 没有进行太多的分析 总在想赶着完成任务似的 这是不可行 也不可持久的 记住是探索
-- 高手和新手的一个区别在于 高手拿到一个任务 分析之后 可以快速分解成多个子任务 完成一个个子任务 最终完成任务
+第一周任务下来 先将任务完成了 最后在写教程的时候 又对代码进行了测试 因为都写在了一个脚本中 所以再次测试的时候 就重新来过 消耗了无谓的时间 缺少**全局观** **调正**
+
+完成任务时：
+
+- 分析
+- 然后 google site:stackoverflow 进行关键字搜索 对应模块 函数
+- help document 查询
+
+PS
+
+- **淡定自在** 任务发布的时候 简单看了一下任务 没有进行太多的分析 总在想赶着完成任务似的 这是不可行 也不可持久的 记住是探索
+- **水平** 高手和新手的一个区别 任务分解能力
 	+ 学会分析问题 拆解问题 解决问题
 	+ Keep calm Keep Thinking Smartly
-- 发现自己写的比较冗余？如何改进写教程呢？
-- 
+- **关于教程** 发现自己写的比较冗余？如何改进写教程呢？
+- **改进**
+	- 遇见问题 或 项目 
+		- 分析是**什么**
+		- **怎么**做 分解问题 拆解项目
+		- 循序渐进
+		- 实践 模仿 创意
+	- 子项
+		- 一个个脚本编写
+		- 测试
+		- 整合
+		- 不要一股脑儿就在 一个脚本中 进行
+
+
+	
